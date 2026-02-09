@@ -12,10 +12,15 @@ const noMessages = [
  "Задължавам се да целуна Богомил 10.000 пъти",
  "Натисни 'Не', ако не обичаш Пебълс",
 ];
-noBtn.addEventListener("mouseover", () => {
+const moveNoButton = () => {
  const x = Math.random() * 120 - 60;
- const y = Math.random() * 100 - 50;
+ const y = -(Math.random() * 100 + 20); // Only move upward (negative Y)
  noBtn.style.transform = `translate(${x}px, ${y}px)`;
+};
+
+noBtn.addEventListener("mouseover", moveNoButton);
+noBtn.addEventListener("touchstart", (e) => {
+ moveNoButton();
 });
 noBtn.addEventListener("click", () => {
  noCount++;
