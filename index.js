@@ -31,7 +31,9 @@ noBtn.addEventListener("click", () => {
  }
 });
 yesBtn.addEventListener("click", () => {
- message.textContent = "Събота - Fake French";
+ message.textContent = "Събота, 18:00 - Fake French";
+ message.style.fontSize = '2rem';
+ message.style.marginTop = '1rem';
   document.querySelector("h1").textContent = "Каза ДА! ❤️‍🔥";
  littleMouse.style.display = "none";
  noBtn.style.display = "none";
