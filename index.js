@@ -3,13 +3,13 @@ const noBtn = document.getElementById("noBtn");
 const message = document.getElementById("message");
 let noCount = 0;
 const noMessages = [
- "Are you sure? 😳",
- "Think again... 🥺",
- "No is not an option 😌",
- "You clicked the wrong one I think 😭",
- "My heart is cracking... 💔",
- "Okay last chance 😤",
- "No button is acting weird... 😈",
+ "Сигурна?",
+ "Айде пак",
+ "Мишкееее",
+ "Натисни, ако не ти се ходи в Япония",
+ "Ако натиснеш ще ти продадем Дайсъна",
+ "Задължавам се да целуна Богомил 10.000 пъти",
+ "Натисни, ако не обичаш Пебълската",
 ];
 noBtn.addEventListener("mouseover", () => {
  // Make the "No" button run away
@@ -25,16 +25,16 @@ noBtn.addEventListener("click", () => {
  const scale = 1 + noCount * 0.15;
  yesBtn.style.transform = `scale(${scale})`;
  // After too many tries, disable No button 😄
- if (noCount >= 6) {
+ if (noCount >= 7) {
    noBtn.disabled = true;
    noBtn.style.opacity = 0.5;
    noBtn.style.cursor = "not-allowed";
-   message.textContent = "No button has been removed for your safety 😇";
+   message.textContent = "Махнахме бутона за отказ, защото нямаш право на глас!";
  }
 });
 yesBtn.addEventListener("click", () => {
- message.textContent = "YAAAAAY 💖 I LOVE YOU 😭💘 See you on Valentine’s!";
- document.querySelector("h1").textContent = "💞 SHE SAID YES 💞";
+ message.textContent = "Събота - Fake French, аз и ти ";
+ document.querySelector("h1").textContent = "💞 Каза ДА! 💞";
  noBtn.style.display = "none";
- yesBtn.textContent = "Best decision ever 😌💕";
+ yesBtn.textContent = "Обичам те!";
 });
