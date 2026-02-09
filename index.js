@@ -23,7 +23,7 @@ noBtn.addEventListener("click", () => {
    noMessages[Math.min(noCount - 1, noMessages.length - 1)];
  const scale = 1 + noCount * 0.15;
  yesBtn.style.transform = `scale(${scale})`;
- if (noCount >= 7) {
+ if (noCount >= 8) {
    noBtn.disabled = true;
    noBtn.style.opacity = 0.5;
    noBtn.style.cursor = "not-allowed";
@@ -31,10 +31,9 @@ noBtn.addEventListener("click", () => {
  }
 });
 yesBtn.addEventListener("click", () => {
- message.textContent = "Събота, 18:00 - Fake French";
+ message.textContent = "Събота, Confetti, аз и ти?";
  message.style.fontSize = '2rem';
  message.style.marginTop = '1rem';
-  document.querySelector("h1").textContent = "Каза ДА! ❤️‍🔥";
  littleMouse.style.display = "none";
  noBtn.style.display = "none";
  yesBtn.textContent = "Обичам те!";
