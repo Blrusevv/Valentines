@@ -20,7 +20,7 @@
    }
    h1 {
     margin: 0 0 10px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
    }
    .subtitle {
     margin: 0 0 20px;
@@ -74,7 +74,7 @@
     color: #333;
    }
    .message {
-    margin-top: 18px;
+    margin-top: 2rem;
     font-size: 1.05rem;
     font-weight: 600;
     min-height: 28px;

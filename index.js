@@ -33,7 +33,6 @@ noBtn.addEventListener("click", () => {
 yesBtn.addEventListener("click", () => {
  message.textContent = "Събота, Confetti, аз и ти?";
  message.style.fontSize = '2rem';
- message.style.marginTop = '1rem';
  littleMouse.style.display = "none";
  noBtn.style.display = "none";
  yesBtn.textContent = "Обичам те!";
